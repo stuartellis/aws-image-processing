@@ -34,3 +34,5 @@ This project uses Terraform and Python. It avoids using additional tools.
 For simplicity, this project builds the Lambda using Terraform to ZIP and upload the code. We can use a deployment package without a Lambda layer, since we are deploying a single application with a single dependency. In a production situation, we would expect to manage the code with external processes.
 
 The Lambda itself uses the Python library [exif](https://pypi.org/project/exif/) to process images. Images are handled in-memory, rather than round-tripping with temporary storage.
+
+Permissions on the user accounts are strictly limited to requirements.
